@@ -1,0 +1,123 @@
+<!-- Ahmed Youssef -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>CRUD</h1>
+      </div>
+      <div class="search">
+        <label for="searchInput" class="searchLabel input">Search for:</label>
+        <input type="text" id="searchInput" class="searchItem inputField" value=""/>
+
+        <!-- <label for="searchCategories" class="searchLabel">Search by:</label>
+        <select name="cars" id="cars" class="searchItem searchBy inputField">
+            <option value="audi">All</option>
+          <option value="volvo">Name</option>
+          <option value="saab">Price</option>
+          <option value="mercedes">Quantity</option>
+          <option value="audi">Category</option> -->
+        </select>
+
+        <button class="searchButton btn" id="searchButton" onclick="search()">Search</button>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="tableHolder">
+        <div class="table" id="productTable">
+          <table id="table">
+            <thead>
+              <tr class="tableHeader">
+                <th class="tableHeader">No.</th>
+                <th class="tableHeader">Product Name</th>
+                <th class="tableHeader">Price</th>
+                <th class="tableHeader">Quantity</th>
+                <th class="tableHeader">Category</th>
+              </tr>
+            </thead>
+             <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div class="aboveTable">
+          <div class="productInfo">
+            <span class="productNumText">Number of products: </span>
+            <span id="productNum">0</span>
+          </div>
+
+          <div class="tableButtonsHolder">
+            <button
+              class="edit tableButtons btn disabled"
+              id="editButton"
+              onclick="addToInputFields()"
+            >
+              Edit
+            </button>
+            <button class="tableButtons btn disabled" id="deleteButton" onclick="deleteRow()">
+              Delete
+            </button>
+            <button
+              class="edit tableButtons btn disabled"
+              onclick="clearAll()"
+              id="clearAllButton"
+            >
+              Clear All
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="inputHolder">
+        <div class="inputs">
+          <div class="input">
+            <label for="name">Product Name:</label>
+            <input type="text" id="name" name="name" class="inputField" required />
+          </div>
+
+          <div class="input">
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" class="inputField" required />
+          </div>
+
+          <div class="input">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" class="inputField" required />
+          </div>
+
+          <div class="input">
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="quantity" class="inputField" required />
+          </div>
+        </div>
+
+        <div class="buttonHolder">
+          <button
+            id="edit"
+            class="btn inputButtons displayNone"
+            onclick="edit()"
+          >
+            Apply edits
+          </button>
+          <button id="add" class="btn inputButtons" onclick="add()">Add</button>
+          <button id="clear" class="btn inputButtons" onclick="rest()">Clear</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js.js"></script>
+    <!-- <script src="js2.js"></script> -->
+  </body>
+</html>

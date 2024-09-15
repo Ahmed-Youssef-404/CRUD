@@ -1,0 +1,227 @@
+/* Ahmed Youssef */
+
+.displayNone {
+  display: none;
+}
+
+.selected-row {
+  background-color: #fff373 !important;
+  background-color: #3800c4 !important;
+  color: #fff;
+}
+
+.highlighted-row {
+  background-color: rgb(255, 164, 90) !important;
+}
+.highlighted-cell {
+  background-color: rgb(152, 43, 0) !important;
+  color: white;
+}
+
+body {
+  background-color: #fefefe;
+  background-color: #e7eff6;
+  background-color: #f3f6f9;
+  font-family: Arial, sans-serif;
+  /* background-color: #1c3755; */
+  margin: 3px;
+  margin-bottom: 5px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  /* background-color: rgb(222, 225, 255); */
+  background: rgb(222, 225, 255);
+  background: rgb(131, 152, 194);
+  background: #eee1b5;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: solid rgb(32, 34, 71);
+  font-size: large;
+  cursor: pointer;
+  margin: 0 7px;
+}
+
+.btn:hover {
+  filter: brightness(0.92);
+}
+
+.disabled {
+  cursor: default;
+  background-color: #ccc;
+}
+
+.disabled:hover {
+  filter: none;
+}
+
+header {
+  border: solid rgb(0, 0, 0) 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  height: 11vh;
+}
+
+.searchLabel {
+  margin: 0 0 0 10px;
+  font-weight: 600;
+  font-size: large;
+}
+
+.searchItem {
+  height: 35px;
+  font-size: larger;
+  outline: none;
+  border: solid gray 2px;
+}
+
+.searchBy {
+  width: 120px;
+  font-size: medium;
+}
+
+.searchButton {
+  padding: 0 20px;
+  height: 35px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 86vh;
+}
+
+.tableHolder {
+  border: solid rgb(0, 54, 87) 3px;
+  border-right: 0;
+  width: 70%;
+  padding: 0 5px;
+  /* height: 500px; */
+}
+
+.inputHolder {
+  /* background-color: red; */
+  border: solid rgb(0, 54, 87) 3px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.inputHolder .inputs{
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: large;
+  /* margin: 10px; */
+}
+
+.inputHolder .inputs .input {
+  /* border: solid blue; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 13px;
+}
+
+.inputHolder .inputs input {
+  height: 35px;
+  font-size: larger;
+  outline: none;
+  border: solid gray 2px;
+}
+
+.inputHolder .inputs input:focus {
+  background-color: rgb(245, 254, 255);
+}
+
+.inputField {
+  background-color: #e2e9ff;
+  /* background-color: #c7d4e7; */
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.buttonHolder {
+  margin: auto;
+  padding: 10px 0;
+}
+
+.aboveTable {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  /* border: solid red; */
+}
+
+.productInfo {
+  font-size: large;
+}
+
+.table {
+  margin-top: 5px;
+  /* max-height: 437px; */
+  overflow-y: auto; /* Enable vertical scrolling */
+  height: 85%;
+  /* border: solid greenyellow; */
+}
+
+
+thead {
+  position: sticky;
+  /* position: fixed; */
+  /* border: solid black; */
+  top: 0;
+  z-index: 100; /* Ensure the header is above the table rows */
+  height: 30px !important;
+  font-size: 20px;
+}
+
+.tableHeader {
+  background-color: #ffe58f;
+  /* color: white; */
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+td,
+th {
+  border: 2px solid #303030;
+  padding: 8px;
+  text-align: center;
+  height: 19px;
+  /* font-weight: 600; */
+  font-size: large;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+  background-color: #b3bbc7;
+  background-color: #e5f2fc;
+  background-color: #fbffdf;
+}
+
+tr:nth-child(odd) {
+  background-color: #8295b0;
+  background-color: #d5d8dd;
+  background-color: #c8dded;
+  background-color: #d6e6f4;
+}
+
+/* Style for the cells in the first column */
+table td:first-child {
+  width: 4%;
+}
